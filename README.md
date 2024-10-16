@@ -1,6 +1,6 @@
 ## Description of project
 Our application Talio is a to-do list application with which you can create your own lists and tasks to keep your tasks organised.
-Our app offers a lot of flexibility, such as editing created lists and cards and moving cards around.
+Our app offers a lot of flexibility, such as editing created lists and cards and moving cards around. As well as including an admin to control procedures where the Admin password is 1010
 The app also allows for detailed tasks, multiple taskboards and multiple synchronized
 instances of the application open at the time.
 ## Group members
@@ -15,6 +15,17 @@ instances of the application open at the time.
 | ![](https://secure.gravatar.com/avatar/773a24ae961de6c27bcb062be7015c01?s=200&d=identicon) | Emīls Dzintars        | E.Dzintars@student.tudelft.nl     |
 
 ## How to run it
+Before running it you need to ensure that the setup is correct, the project structure needs to use SDK 19 oracle OpenJDK version 19 and language level set to 11 - Local Variable syntax for lamda parameters.
+
+The scenebuilder requires Javafx sdk 19 which shoul dbe downloaded and set in the Java folder
+
+In the edit configurations client Main it should be set to Java 19 SDK and in modify opitions select Add VM option and copy this line:
+
+--module-path "C:\Program Files\Java\javafx-sdk-19.0.2.1\lib" --add-modules javafx.controls,javafx.fxml 
+
+Where in the "" should be the path to your javafx sdk lib folder After doing this you can now start to run the program
+
+
 When you want to run the program, you first have to start the server.
 You can do this by following the following file path: server/src/main/java/server/Main.java.
 Now right-click on the 'Main' java file and press run Main.main().
